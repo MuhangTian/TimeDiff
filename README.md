@@ -16,6 +16,7 @@ This repository contains the code implementation for TimeDiff, a diffusion model
 * **RCGAN**: run `rcgan_train.py`; implementation is stored at `models/rc_gan`
 * **C-RNN-GAN**: run `crnngan_train.py`; implementation is stored at `models/crnn_gan`
 * **T-Forcing/P-Forcing**: run `pt_forcing_train.py`; implementation is stored at `models/p_or_t_forcing`; passing the command line argument `-adversarial` uses P-Forcing. Otherwise, T-Forcing is used
+* **HALO**: please refer to `halo_preprocess.py` and the descriptions provided by the HALO authors in their manuscript to preprocess the input data. Run `halo_train.py` to train the model and `halo_generate.py` for sampling.
 
 ## Dependencies for the Baselines
 We recommend using independent environments for each of the baseline models, as some of them have distinctively different requirements (one example is the version of Python for tensorflow 1.X). Please refer to the code repository for the baselines and Appendix A.4.4 in our paper for more details.

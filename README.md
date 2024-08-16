@@ -30,5 +30,3 @@ We recommend using independent environments for each of the baseline models, as 
 * `eval_samples.py` is the script responsible for running all the evaluation metrics discussed in the paper; to run the code, pass the intended metric to use via `--metric` command line argument, as well as the training data (`--train_path`), testing data (`--test_path`), and synthetic data (`--sync_path`).
 * Implementations for data utility metrics can be found at `evaluate/utility.py`.
 * Implementations for privacy risk metrics can be found at `evaluate/privacy.py`.
-* `to_summary_stats.py` turns time series data into summary statistics discussed in Appendix B.4.
-* `visualize.py` creates time series visualizations for Appendix B.5. The mean and $\pm$ standard deviation visualizations are created with `eval_samples.py` by setting the metric argument as `--metric trajectory`.

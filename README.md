@@ -1,5 +1,5 @@
 # Reliable Generation of Privacy-preserving Synthetic EHR Time Series via Diffusion Models
-[![DOI](https://img.shields.io/badge/DOI-10.1093/jamia/ocae229-blue.svg)](https://doi.org/10.1093/jamia/ocae229)
+[![DOI](https://img.shields.io/badge/DOI-10.1093/jamia/ocae229-blue.svg)](https://doi.org/10.1093/jamia/ocae229) [![arxiv badge](https://img.shields.io/badge/arXiv-2310.15290-red)](https://arxiv.org/abs/2310.15290)
 
 This repository contains the code implementation for TimeDiff, a diffusion model designed for the generation of mixed-type time series data in EHR. Our work is accepted by the Journal of the American Medical Informatics Association (JAMIA).
 

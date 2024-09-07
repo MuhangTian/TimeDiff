@@ -30,3 +30,15 @@ We recommend using independent environments for each of the baseline models, as 
 * `eval_samples.py` is the script responsible for running all the evaluation metrics discussed in the paper; to run the code, pass the intended metric to use via `--metric` command line argument, as well as the training data (`--train_path`), testing data (`--test_path`), and synthetic data (`--sync_path`).
 * Implementations for data utility metrics can be found at `evaluate/utility.py`.
 * Implementations for privacy risk metrics can be found at `evaluate/privacy.py`.
+
+## Citation
+```BibTex
+@article{tian2024reliable,
+  title={Reliable generation of privacy-preserving synthetic electronic health record time series via diffusion models},
+  author={Tian, Muhang and Chen, Bernie and Guo, Allan and Jiang, Shiyi and Zhang, Anru R},
+  journal={Journal of the American Medical Informatics Association},
+  pages={ocae229},
+  year={2024},
+  publisher={Oxford University Press}
+}
+```

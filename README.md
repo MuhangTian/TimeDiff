@@ -12,7 +12,7 @@ This repository contains the code implementation for TimeDiff, a diffusion model
 Please see `preprocess` directory for Jupyter notebooks and Python scripts on how we preprocess EHR data for model training and evaluation.
 
 ## Baselines
-***NOTE: Please set `PYTHONPATH` correctly in order to run the baseline models.***
+***NOTE: Please set `PYTHONPATH` correctly to the root of this repository in order to run the baseline models.***
 
 ### Dependencies for the Baselines
 We recommend using independent environments for each of the baseline models, as some of them have distinctively different requirements (one example is the version of Python for tensorflow 1.X). Please refer to the code repository for the baselines and Appendix A.4.4 in our paper for more details.

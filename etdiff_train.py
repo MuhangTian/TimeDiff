@@ -17,7 +17,6 @@ from models.ETDiff.mixed_diffusion import MixedDiffusion
 from models.ETDiff.et_diff import ETDiff
 from models.ETDiff.blocks import NeuralCDE, RNN, EncoderDecoderRNN
 from models.ETDiff.utils import TimeSeriesDataset
-from models.denoising_diffusion_pytorch import Unet1D
 
 # categorical_cols = [1, 3, 5, 7]       # for eICU
 categorical_cols = [1, 3, 5, 7, 9, 11, 13]      # for MIMIC-IV
@@ -247,16 +246,6 @@ if __name__ == "__main__":
             embed_dim = args.embed_dim,
             time_dim = args.time_dim,
         )
-        # model = Unet1D(
-        #     dim = args.dim,
-        #     dim_mults = (1,2,4),
-        #     channels = dataset.channels + len(dataset.categorical_cols),
-        #     resnet_block_groups = 2,
-        #     embed_dim = args.embed_dim,
-        #     time_dim = args.time_dim,
-        #     # attn_dim_head = args.attn_dim_head,
-        #     # attn_heads = args.attn_heads,
-        # )
         diffusion = MixedDiffusion(
             model = model,
             channels = dataset.channels + len(dataset.categorical_cols),
